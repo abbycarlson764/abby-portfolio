@@ -17,7 +17,7 @@ export default function Footer() {
           <FiGithub />
         </a>
         <a
-          href="#"
+          href="www.linkedin.com/in/abby-carlson-b1b368369"
           className="footer-link"
           aria-label="LinkedIn"
           target="_blank"
@@ -26,7 +26,7 @@ export default function Footer() {
           <FiLinkedin />
         </a>
         <a
-          href="mailto:hello@abbycarlson.dev"
+          href="mailto:abbycarlson764@gmail.com"
           className="footer-link"
           aria-label="Email"
         >
