@@ -1,0 +1,65 @@
+.navbar-custom {
+  background-color: rgba(13, 17, 23, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 0;
+  transition: background-color var(--transition);
+}
+
+.navbar-brand-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-link-custom {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted) !important;
+  margin: 0 0.25rem;
+  padding: 0.4rem 0.75rem !important;
+  border-radius: var(--radius);
+  transition: color var(--transition), background-color var(--transition) !important;
+  position: relative;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--purple));
+  border-radius: 1px;
+  transition: width var(--transition);
+}
+
+.nav-link-custom:hover {
+  color: var(--text) !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom.active::after {
+  width: 60%;
+}
+
+.nav-link-custom.active {
+  color: var(--cyan) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--border) !important;
+}
+.navbar-toggler:focus { box-shadow: 0 0 0 2px rgba(0, 229, 255, 0.3) !important; }

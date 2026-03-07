@@ -1,0 +1,181 @@
+/* ── Hero ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle grid bg */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(48, 54, 61, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(48, 54, 61, 0.3) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Glitch ── */
+.glitch {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3rem, 9vw, 8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--text);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.glitch::before {
+  color: var(--cyan);
+  animation: glitch-1 2.5s infinite;
+  z-index: -1;
+}
+
+.glitch::after {
+  color: var(--purple);
+  animation: glitch-2 2.5s infinite 0.1s;
+  z-index: -1;
+}
+
+@keyframes glitch-1 {
+  0%, 100% {
+    clip-path: inset(0 0 95% 0);
+    transform: translate(-4px, 0);
+  }
+  25% {
+    clip-path: inset(20% 0 70% 0);
+    transform: translate(4px, 0);
+  }
+  50% {
+    clip-path: inset(40% 0 50% 0);
+    transform: translate(4px, 0);
+  }
+  75% {
+    clip-path: inset(60% 0 30% 0);
+    transform: translate(-2px, 0);
+  }
+}
+
+@keyframes glitch-2 {
+  0%, 100% {
+    clip-path: inset(70% 0 10% 0);
+    transform: translate(4px, 0);
+  }
+  25% {
+    clip-path: inset(50% 0 30% 0);
+    transform: translate(-4px, 0);
+  }
+  50% {
+    clip-path: inset(10% 0 80% 0);
+    transform: translate(-4px, 0);
+  }
+  75% {
+    clip-path: inset(30% 0 55% 0);
+    transform: translate(3px, 0);
+  }
+}
+
+/* ── Subtitle ── */
+.hero-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.hero-subtitle span {
+  color: var(--cyan);
+}
+
+/* ── Divider line ── */
+.hero-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyan), var(--purple));
+  margin: 1.5rem auto;
+  border-radius: 1px;
+}
+
+/* ── Tagline ── */
+.hero-tagline {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+/* ── CTA Button ── */
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+  padding: 0.65rem 1.75rem;
+  border-radius: var(--radius);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--cyan);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.btn-cta:hover {
+  color: var(--bg);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+.btn-cta:hover::before {
+  opacity: 1;
+}
+
+.btn-cta span {
+  position: relative;
+  z-index: 1;
+}
+
