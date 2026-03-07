@@ -4,15 +4,15 @@ import '../styles/About.css';
 const SKILLS = [
   {
     category: 'Design',
-    items: ['Figma', 'Design Systems', 'Prototyping', 'User Research', 'Wireframing', 'Accessibility (a11y)'],
+    items: ['Figma', 'Design Systems', 'Prototyping', 'User Research', 'Wireframing', 'Accessibility Standards'],
   },
   {
     category: 'Front End',
-    items: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS / Sass', 'Storybook'],
+    items: ['React', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
   },
   {
     category: 'Tools & Methods',
-    items: ['Vite', 'Git', 'Agile / Scrum', 'Usability Testing', 'Design Critiques'],
+    items: ['Vite', 'Git', 'Usability Testing', 'Design Critiques'],
   },
 ];
 

@@ -5,7 +5,7 @@ const projects = [
     title: 'Mad Bites - Mobile UX Design',
     image: '../../images/madbites_thumbnail.png',
     description:
-      'Connecting Madison’s food trucks with hungry locals in real time, Mad Bites simplifies ordering, socializing, and discovering the best street eats. Designed end-to-end from user research through high-fidelity prototypes',
+      'Connecting Madison’s food trucks with hungry locals in real time, Mad Bites simplifies ordering, socializing, and discovering the best street eats. Designed end-to-end from user research through high-fidelity prototypes.',
     tags: ['UX Research', 'Figma', 'Usability Testing', 'Mobile Design', 'Prototyping'],
     github: null,
     demo: '#',
