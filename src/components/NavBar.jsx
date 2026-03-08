@@ -7,7 +7,7 @@ export default function NavBar() {
     <Navbar expand="md" fixed="top" className="navbar-custom">
       <Container>
         <Navbar.Brand as={NavLink} to="/" className="navbar-brand-text">
-          AC
+          <img src="/logo.svg" alt="AC" height="44" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="main-nav" />

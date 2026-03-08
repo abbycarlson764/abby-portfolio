@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Badge } from 'react-bootstrap';
+
 import { FiArrowRight } from 'react-icons/fi';
 
 const GRADIENT_COLORS = [
@@ -83,19 +83,20 @@ export default function ProjectCard({ project, index = 0 }) {
           {/* Tags */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginBottom: '1.25rem' }}>
             {project.tags.map(tag => (
-              <Badge
+              <span
                 key={tag}
                 style={{
-                  background: 'rgba(139, 92, 246, 0.15)',
+                  background: 'rgba(139, 92, 246, 0.12)',
                   border: '1px solid rgba(139, 92, 246, 0.3)',
                   color: 'var(--text)',
                   fontWeight: 400,
                   fontSize: '0.75rem',
                   padding: '0.25rem 0.6rem',
+                  borderRadius: '4px',
                 }}
               >
                 {tag}
-              </Badge>
+              </span>
             ))}
           </div>
 

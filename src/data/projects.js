@@ -33,8 +33,14 @@ const projects = [
         personas: 
           'Drawing from interviews and survey data, we defined personas that represent our core users: busy students and professors, downtown workers, and local foodies. Each persona shares a love for quick, varied street food, a need for convenience, and a desire to stay connected with friends. Their main challenges include time constraints, lack of up-to-date information, and missing out on popular food truck experiences. These personas became the north star for design decisions, helping us prioritize features and craft tailored flows.',
         images: [
-          { caption: 'Persona Example' },
-          { caption: 'Journey Map Example' },
+          { 
+            src: '/images/persona.jpg',
+            caption: 'Persona Example' 
+          },
+          { 
+            src: '/images/journey-map.jpg',
+            caption: 'Journey Map Example' 
+          },
         ],
       },
       {
@@ -44,8 +50,21 @@ const projects = [
           'During early ideation, we produced low-fidelity sketches to quickly explore navigation, map integration, and the order placement process. Sketching helped visualize how users might move from map to menu with minimal friction and allowed rapid iteration before building wireframes. Drawing out the reward and review features clarified how social elements could fit seamlessly alongside functional needs. Sharing these sketches with the team sparked discussion and aligned our vision before committing to digital designs. We spent a portion of time specifically working on sketches on aspects of the app that could potentially facilitate habitual use and variations of some of those ideas made it to our final prototype.',
         wireframes: 'Translating sketches into wireframes, we structured clear paths for truck discovery, order management, and social engagement. Wireframes mapped out essential elements like truck cards, order status updates, and the loyalty dashboard, defining the app’s core architecture. This stage allowed us to make refinements to our architecture and revealed where extra guidance or streamlined steps were needed. Wireframes provided a blueprint and set the stage for bringing our vision into the final prototype.',
         images: [
-          { caption: 'Sketches' },
-          { caption: 'Wireframes' },
+          { 
+            caption: 'Sketches' 
+          },
+          { 
+            src: '/images/wireframe-order.png',
+            caption: 'Wireframes' 
+          },
+          {
+            src: '/images/wireframe-rewards.png',
+            caption: 'Wireframes'
+          },
+          {
+            src: '/images/wireframe-profile.png',
+            caption: 'Wireframes'
+          }
         ],
       },
       {

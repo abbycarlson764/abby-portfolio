@@ -10,8 +10,8 @@ export default function Home() {
           Abby Carlson
         </h1>
 
-        <p className="hero-subtitle">
-          <span>UX Designer</span> &amp; Front End Developer
+        <p style={{color: '#b7f081ff'}} className="hero-subtitle">
+          UX Designer &amp; Front End Developer
         </p>
 
         <div className="hero-divider" />

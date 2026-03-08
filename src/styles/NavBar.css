@@ -24,7 +24,7 @@
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--muted) !important;
+  color: var(--cyan) !important;
   margin: 0 0.25rem;
   padding: 0.4rem 0.75rem !important;
   border-radius: var(--radius);
@@ -46,7 +46,7 @@
 }
 
 .nav-link-custom:hover {
-  color: var(--text) !important;
+  color: var(--cyan) !important;
   background-color: rgba(255, 255, 255, 0.05);
 }
 

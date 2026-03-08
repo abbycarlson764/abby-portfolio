@@ -110,7 +110,7 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: #b7f081ff;
   margin-bottom: 1rem;
 }
 
@@ -167,7 +167,7 @@
 .problem-callout {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-left: 3px solid var(--cyan);
+  border-left: 3px solid #b7f081ff;
   border-radius: var(--radius);
   padding: 1.5rem 1.75rem;
   max-width: 800px;
@@ -270,6 +270,7 @@ details[open] .process-step-chevron {
 
 .process-step-image {
   width: 100%;
+  aspect-ratio: 3 / 2;
   display: block;
   object-fit: cover;
 }
@@ -367,7 +368,7 @@ details[open] .process-step-chevron {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--cyan);
+  background: #b7f081ff;
   flex-shrink: 0;
   margin-top: 0.55em;
 }
