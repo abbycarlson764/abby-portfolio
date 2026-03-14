@@ -86,8 +86,8 @@ export default function ProjectCard({ project, index = 0 }) {
               <span
                 key={tag}
                 style={{
-                  background: 'rgba(139, 92, 246, 0.12)',
-                  border: '1px solid rgba(139, 92, 246, 0.3)',
+                  background: 'rgba(183, 240, 129, 0.1)',
+                  border: '1px solid rgba(183, 240, 129, 0.3)',
                   color: 'var(--text)',
                   fontWeight: 400,
                   fontSize: '0.75rem',

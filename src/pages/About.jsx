@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { FiFileText } from 'react-icons/fi';
 import '../styles/About.css';
 
 const SKILLS = [

@@ -8,7 +8,7 @@ const projects = [
       'Connecting Madison’s food trucks with hungry locals in real time, Mad Bites simplifies ordering, socializing, and discovering the best street eats. Designed end-to-end from user research through high-fidelity prototypes.',
     tags: ['UX Research', 'Figma', 'Usability Testing', 'Mobile Design', 'Prototyping'],
     github: null,
-    demo: '#',
+    demo: null,
     casestudy: '/files/full-case-study.pdf',
     role: 'UX Researcher & Designer',
     duration: '12 weeks',
@@ -78,8 +78,16 @@ const projects = [
             caption: 'Ordering Page' 
           },
           { 
-            src: '',
+            src: '/images/onboarding.png',
             caption: 'Onboarding'
+          },
+          { 
+            src: '/images/food-trucks.png',
+            caption: 'Food Trucks'
+          },
+          { 
+            src: '/images/order.png',
+            caption: 'Ordering'
           },
         ],
       },

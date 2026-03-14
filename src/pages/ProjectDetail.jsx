@@ -178,9 +178,11 @@ export default function ProjectDetail() {
                   <FiGithub size={15} /> View Code
                 </a>
               )}
-              <a href={project.demo} className="detail-link-btn secondary" target="_blank" rel="noreferrer">
-                <FiExternalLink size={15} /> Live Demo
-              </a>
+              {project.demo && (
+                <a href={project.demo} className="detail-link-btn secondary" target="_blank" rel="noreferrer">
+                  <FiExternalLink size={15} /> Live Demo
+                </a>
+              )}
             </div>
           </div>
 

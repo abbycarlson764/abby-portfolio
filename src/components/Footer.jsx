@@ -34,7 +34,7 @@ export default function Footer() {
         </a>
       </div>
       <p className="footer-copy">
-        &copy; {year} <span>Abby Carlson</span> — built with React &amp; Vite
+        &copy; {year} <span style={{color: '#b7f081ff'}}>Abby Carlson</span> — built with React &amp; Vite
       </p>
     </footer>
   );

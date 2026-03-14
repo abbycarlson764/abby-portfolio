@@ -23,6 +23,13 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={NavLink}
+              to="/writing"
+              className="nav-link-custom"
+            >
+              Writing
+            </Nav.Link>
+            <Nav.Link
+              as={NavLink}
               to="/about"
               className="nav-link-custom"
             >
