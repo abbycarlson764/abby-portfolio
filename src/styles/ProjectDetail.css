@@ -270,9 +270,8 @@ details[open] .process-step-chevron {
 
 .process-step-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .process-step-image-placeholder {

@@ -8,7 +8,7 @@ export default function PostDetail() {
   const { slug } = useParams();
   const post = posts.find(p => p.slug === slug);
 
-  if (!post) return <Navigate to="/writing" replace />;
+  if (!post) return <Navigate to="/posts" replace />;
 
   const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -19,9 +19,9 @@ export default function PostDetail() {
   return (
     <main className="post-detail">
       <Container>
-        <Link to="/writing" className="back-btn">
+        <Link to="/posts" className="back-btn">
           <FiArrowLeft size={15} />
-          Back to Writing
+          Back to Posts
         </Link>
 
         <article className="post-article">

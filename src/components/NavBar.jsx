@@ -23,10 +23,10 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={NavLink}
-              to="/writing"
+              to="/posts"
               className="nav-link-custom"
             >
-              Writing
+              Posts
             </Nav.Link>
             <Nav.Link
               as={NavLink}

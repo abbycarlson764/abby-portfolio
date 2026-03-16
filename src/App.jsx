@@ -20,8 +20,8 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
         <Route path="/about" element={<About />} />
-        <Route path="/writing" element={<Writing />} />
-        <Route path="/writing/:slug" element={<PostDetail />} />
+        <Route path="/posts" element={<Writing />} />
+        <Route path="/posts/:slug" element={<PostDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>

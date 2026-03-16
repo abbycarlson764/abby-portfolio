@@ -174,7 +174,7 @@ export default function ProjectDetail() {
                 </a>
               )}
               {project.github && (
-                <a href={project.github} className="detail-link-btn secondary" target="_blank" rel="noreferrer">
+                <a href={project.github} className="detail-link-btn primary" target="_blank" rel="noreferrer">
                   <FiGithub size={15} /> View Code
                 </a>
               )}

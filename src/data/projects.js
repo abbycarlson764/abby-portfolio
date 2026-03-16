@@ -5,7 +5,7 @@ const projects = [
     title: 'Mad Bites - Mobile UX Design',
     image: '../../images/madbites_thumbnail.png',
     description:
-      'Connecting Madison’s food trucks with hungry locals in real time, Mad Bites simplifies ordering, socializing, and discovering the best street eats. Designed end-to-end from user research through high-fidelity prototypes.',
+      'Connecting Madison\'s food trucks with hungry locals in real time, Mad Bites simplifies ordering, socializing, and discovering the best street eats. Designed end-to-end from user research through high-fidelity prototypes.',
     tags: ['UX Research', 'Figma', 'Usability Testing', 'Mobile Design', 'Prototyping'],
     github: null,
     demo: null,
@@ -16,7 +16,7 @@ const projects = [
     inspirationImage: { src: '../../images/madbites-inspiration.jpg', caption: 'Library Mall Food Trucks' },
     inspiration: 'The wait times are a major issue with the food truck ordering system in Madison. Throughout my four years of my undergraduate degree, I had tried multiple times to order one of the iconic giant spring rolls that Fresh Cool Drinks is known for but had to leave the line every attempt before ordering because of the extreme wait times. With only 15 minutes in between classes, it was impossible to stop and get something to eat. Our shared issues with ordering from the library mall food trucks was what inspired this application.',
     overview:
-      'Fresh Flavors, Zero Guesswork. Connecting Madison’s food trucks with hungry locals in real time, Mad Bites simplifies ordering, socializing, and discovering the best street eats.',
+      'Fresh Flavors, Zero Guesswork. Connecting Madison\'s food trucks with hungry locals in real time, Mad Bites simplifies ordering, socializing, and discovering the best street eats.',
     problem:
       'Locals seeking food trucks face uncertainty about hours, locations, and wait times, causing frustration and missed opportunities for both users and vendors.',
     process: [
@@ -24,46 +24,36 @@ const projects = [
         phase: 'Empathize & Define',
         summary: 'User Interviews & Research',
         detail:
-          'We began by researching the local food trucks and created an interview question guide to guide our user interviews. We conducted interviews with our classmates about their food truck experiences, ensuring to ask open-ended questions to ensure accurate answers that were not influenced by the wording of our questions. The goal was to understand pain points around food truck discovery, ordering, and social engagement. These conversations uncovered user frustrations and highlighted unmet needs, guiding our product priorities and feature set.',
+          'The biggest thing our research confirmed: users weren\'t failing to find food trucks because they weren\'t trying hard enough — they were failing because the information simply wasn\'t there. We constructed interview questions for students, professors, and downtown workers using open-ended questions to avoid leading answers. Nobody knew where trucks would be on a given day, and nobody was willing to wait in a line without knowing how long it would take.',
         bullets: [
-          'Many users cited difficulty finding operating food trucks and knowing their current locations.',
-          'Order wait times were unpredictable, leading to user frustration and walkaways.',
-          'Users expressed interest in seeing friends\' reviews and orders to help with decisions.'
+          'Users couldn\'t reliably find which trucks were operating or where — discovery was word-of-mouth or luck.',
+          'Unpredictable wait times were the #1 reason users abandoned the line entirely.',
+          'Users wanted to see what friends had ordered or reviewed — social proof lowered decision fatigue.',
         ],
-        personas: 
-          'Drawing from interviews and survey data, we defined personas that represent our core users: busy students and professors, downtown workers, and local foodies. Each persona shares a love for quick, varied street food, a need for convenience, and a desire to stay connected with friends. Their main challenges include time constraints, lack of up-to-date information, and missing out on popular food truck experiences. These personas became the north star for design decisions, helping us prioritize features and craft tailored flows.',
+        personas:
+          'From our research, 4 clear users emerged. An example of one of them is someone time-constrained, phone-first, and decision-fatigued by lunchtime. Meet Sam — a junior with 15 minutes between lectures who just wants to know if the spring roll line is worth it before she commits. Her journey map revealed a critical drop-off point: the moment she can\'t estimate the wait, she leaves. These personas became the design problem we kept returning to throughout the project.',
         images: [
-          { 
-            src: '/images/persona.jpg',
-            caption: 'Persona Example' 
-          },
-          { 
-            src: '/images/journey-map.jpg',
-            caption: 'Journey Map Example' 
-          },
         ],
       },
       {
         phase: 'Ideate',
         summary: 'Sketches & Wireframes',
         detail:
-          'During early ideation, we produced low-fidelity sketches to quickly explore navigation, map integration, and the order placement process. Sketching helped visualize how users might move from map to menu with minimal friction and allowed rapid iteration before building wireframes. Drawing out the reward and review features clarified how social elements could fit seamlessly alongside functional needs. Sharing these sketches with the team sparked discussion and aligned our vision before committing to digital designs. We spent a portion of time specifically working on sketches on aspects of the app that could potentially facilitate habitual use and variations of some of those ideas made it to our final prototype.',
-        wireframes: 'Translating sketches into wireframes, we structured clear paths for truck discovery, order management, and social engagement. Wireframes mapped out essential elements like truck cards, order status updates, and the loyalty dashboard, defining the app’s core architecture. This stage allowed us to make refinements to our architecture and revealed where extra guidance or streamlined steps were needed. Wireframes provided a blueprint and set the stage for bringing our vision into the final prototype.',
+          'We sketched fast and wide before committing to anything. The goal was to explore how a user might move from map to menu without friction and to find out where the flow naturally broke down. A few early ideas didn\'t survive this stage, which was the point: sketching is cheap, building is not. One recurring debate was around habit-forming features like loyalty rewards. We kept them in, but deliberately placed them secondary to the core ordering flow so they wouldn\'t add cognitive load on a first visit.',
+        wireframes:
+          'Wireframes let us pressure-test the architecture before touching visual design. We structured three primary paths: truck discovery, ordering, and review and mapped out how they connected. This stage surfaced a key decision: the review flow needed to be organized by truck, not chronologically, or it would be useless in the moment a user was trying to make a decision.',
         images: [
-          { 
-            caption: 'Sketches' 
-          },
-          { 
+          {
             src: '/images/wireframe-order.png',
-            caption: 'Wireframes' 
+            caption: 'Wireframe — ordering flow'
           },
           {
             src: '/images/wireframe-rewards.png',
-            caption: 'Wireframes'
+            caption: 'Wireframe — loyalty rewards'
           },
           {
             src: '/images/wireframe-profile.png',
-            caption: 'Wireframes'
+            caption: 'Wireframe — user profile'
           }
         ],
       },
@@ -71,40 +61,40 @@ const projects = [
         phase: 'Prototype',
         summary: 'High Fidelity Prototyping',
         detail:
-          'The final high-fidelity prototype presented a cleaner user flow for ordering a meal and checkout. It also met user needs for a delivery option.',
+          'Moving into high fidelity forced real decisions. We chose a dark, high-contrast visual direction to make the app feel energetic and fast — matching the street food context rather than a sterile food delivery aesthetic. Components were designed to minimize taps: truck discovery, menu browsing, and checkout were reachable in three steps from the home screen.',
         images: [
-          { 
+          {
             src: '/images/madbites-prototype.png',
-            caption: 'Ordering Page' 
+            caption: 'Ordering page'
           },
-          { 
+          {
             src: '/images/onboarding.png',
             caption: 'Onboarding'
           },
-          { 
+          {
             src: '/images/food-trucks.png',
-            caption: 'Food Trucks'
+            caption: 'Food truck discovery'
           },
-          { 
+          {
             src: '/images/order.png',
-            caption: 'Ordering'
+            caption: 'Order flow'
           },
         ],
       },
       {
         phase: 'Test',
-        summary: 'Usability Testing & Reflection',
+        summary: 'Usability Testing & Iteration',
         detail:
-          'Our group conducted one round of usability studies.  The study used a high-fidelity prototype and revealed what aspects of the mockups that needed refining and helped reduce creator blindness in our app.',
+          'Usability testing is where creator blindness gets exposed. We watched real users interact with the prototype and several patterns emerged that we hadn\'t anticipated. The things that felt obvious to us because we built them, weren\'t obvious at all to someone seeing the app for the first time.',
         findings: [
-          'Adjust the review page so that it is organized by truck, and there is more clarity as to the function of buttons on the page.',
-          'Adjust the “see reviews and ratings” to a button instead of an underlined sentence.',
-          'Instead of a red “+” button, simply allow the user to click on the image to arrive at the product page to lessen confusion.',
-          'Change the “Keep Browsing” button label to “Add More Items” to make it more clear which page you are navigating to.'
+          'Users tapped the product image expecting to open it — so we replaced the red + button with a tappable image, eliminating a confusing UI element entirely.',
+          'Users ignored the underlined "see reviews and ratings" text — they didn\'t read it as a link. We converted it to a clearly labeled button.',
+          '"Keep Browsing" confused users about where they\'d land — renaming it "Add More Items" made the destination unambiguous.',
+          'The review page felt disorganized — grouping reviews by truck rather than chronologically made them actionable at the moment of decision.',
         ],
         images: [
-          { caption: 'Usability Testing - Before' },
-          { caption: 'Usability Testing - After'}
+          { src: '/images/testing1.png', caption: 'Cart - before and after' },
+          { src: '/images/testing2.png', caption: 'Food Trucks - before and after' }
         ],
       },
     ],
@@ -128,13 +118,13 @@ const projects = [
   },
   {
     id: 2,
-    slug: 'Madison Cat Project',
+    slug: 'badger-buddies',
     title: 'Badger Buddies',
     image: '/images/mcp-thumbnail.png',
     description:
       'A cat adoption platform built for CS571 at UW-Madison showcasing real cats from The Madison Cat Project. Features browsing, search, filtering, favorites, and a detailed modal view — all built with React, React Router, and Bootstrap.',
     tags: ['React', 'React Router', 'Bootstrap', 'Context API', 'JavaScript'],
-    github: '#',
+    github: 'https://github.com/abbycarlson764/badger-buddies',
     demo: '#',
     role: 'Front End Developer',
     duration: '1 week',

@@ -4,11 +4,11 @@
 :root {
   --bg:        #11171e;
   --surface:   #192127;
-  --border:    #1c2127;
+  --border:    #30363d;
   --cyan:      #00e5ff;
   --purple:    #8b5cf6;
   --text:      #e6edf3;
-  --muted:     #8b949e;
+  --muted:     #c1c8d0;
   --radius:    8px;
   --transition: 0.25s ease;
 }

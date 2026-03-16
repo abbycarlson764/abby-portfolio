@@ -9,7 +9,7 @@ export default function Writing() {
     <main className="writing-page">
       <Container>
         <h2 className="section-heading">
-          <span>Writing</span>
+          <span>Posts</span>
         </h2>
         <p className="section-subheading">
           Thoughts on design, development, and everything in between.
@@ -21,7 +21,7 @@ export default function Writing() {
           <Row xs={1} sm={2} lg={3} className="g-4">
             {posts.map(post => (
               <Col key={post.id}>
-                <Link to={`/writing/${post.slug}`} className="post-card">
+                <Link to={`/posts/${post.slug}`} className="post-card">
                   <div className="post-card-header">
                     {post.image && <img src={post.image} alt="" className="post-card-image" />}
                   </div>
